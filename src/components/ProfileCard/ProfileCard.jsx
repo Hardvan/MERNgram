@@ -12,6 +12,29 @@ const ProfileCard = () => {
         {/* Profile Image */}
         <img src={Profile} alt="" />
       </div>
+
+      <div className="ProfileName">
+        <span>Hardvan</span>
+        <span>Seniormost Senior of Senority</span>
+      </div>
+
+      <div className="followStatus">
+        <hr />
+        <div>
+          <div className="follow">
+            <span>1</span>
+            <span>Followings</span>
+          </div>
+          {/* Vertical Line */}
+          <div className="vl"></div>
+
+          <div className="follow">
+            <span>1</span>
+            <span>Followers</span>
+          </div>
+        </div>
+        <hr style={{ opacity: "0" }} />
+      </div>
     </div>
   );
 };
