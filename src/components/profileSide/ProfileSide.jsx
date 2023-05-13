@@ -1,13 +1,12 @@
-import React from 'react'
+import React from "react";
+import LogoSearch from "../LogoSearch/LogoSearch";
 
 const ProfileSide = () => {
   return (
-
     <div className="ProfileSide">
-        ProfileSide
+      <LogoSearch />
     </div>
-  )
+  );
+};
 
-}
-
-export default ProfileSide
+export default ProfileSide;
