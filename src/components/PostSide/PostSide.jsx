@@ -5,6 +5,7 @@ import PostShare from "../PostShare/PostShare";
 const PostSide = () => {
   return (
     <div className="PostSide">
+      {/*  Create your Post section */}
       <PostShare />
     </div>
   );
