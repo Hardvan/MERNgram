@@ -33,8 +33,10 @@ const ProfileCard = () => {
             <span>Followers</span>
           </div>
         </div>
-        <hr style={{ opacity: "0" }} />
+        <hr />
       </div>
+
+      <span>My Profile</span>
     </div>
   );
 };
