@@ -19,6 +19,9 @@ const RightSide = () => {
 
       {/* Trending List*/}
       <TrendCard />
+
+      {/* Share Button */}
+      <button className="btn r-btn">Share</button>
     </div>
   );
 };
