@@ -1,0 +1,7 @@
+.ProfileCard {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+  border-radius: 1.5rem;
+}
