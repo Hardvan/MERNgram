@@ -48,6 +48,16 @@
   border: 2px solid var(--orange);
 }
 
+.nav-div {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.nav-div > button {
+  padding: 5px;
+}
+
 /* Hide scrollbar */
 ::-webkit-scrollbar {
   display: none;
