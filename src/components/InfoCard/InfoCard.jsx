@@ -28,7 +28,7 @@ const InfoCard = () => {
         <span>
           <b>Status </b>
         </span>
-        <span>in Relationship</span>
+        <span>Human</span>
       </div>
 
       <div className="info">

@@ -5,7 +5,7 @@ import Profile from "./pages/Profile/Profile";
 import Auth from "./pages/Auth/Auth";
 
 function App() {
-  const [currentPage, setCurrentPage] = useState("profile");
+  const [currentPage, setCurrentPage] = useState("home");
 
   let pageContent;
   if (currentPage === "home") {
