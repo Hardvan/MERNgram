@@ -1,3 +1,5 @@
+// ? Use Thunder Client (Extension) to test API
+
 import express from "express";
 import bodyParser from "body-parser";
 import mongoose from "mongoose";
