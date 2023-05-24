@@ -26,6 +26,7 @@ export const updateUser = async (req, res) => {
   const id = req.params.id;
   const { currentUserId, currentUserAdminStatus, password } = req.body;
 
+  // Check if user is updating his own account or if he is admin
   if (id === currentUserId || currentUserAdminStatus) {
     try {
       // If user wants to update password
@@ -48,5 +49,28 @@ export const updateUser = async (req, res) => {
     res
       .status(403)
       .json({ message: "Access Denied! You can update only your account!" });
+  }
+};
+
+// Delete User
+export const deleteUser = async (req, res) => {
+  const id = req.params.id;
+
+  const { currentUserId, currentUserAdminStatus } = req.body;
+
+  // Check if user is deleting his own account or if he is admin
+  if (currentUserId === id || currentUserAdminStatus) {
+    try {
+      // Delete user by id
+      await UserModel.findByIdAndDelete(id);
+
+      res.status(200).json({ message: "User has been deleted..." });
+    } catch (error) {
+      res.status(500).json({ message: error.message });
+    }
+  } else {
+    res
+      .status(403)
+      .json({ message: "Access Denied! You can delete only your account!" });
   }
 };
